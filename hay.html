@@ -167,72 +167,76 @@
     <div class="card" onclick="flipCard(this)">
         <div class="front">?</div>
         <div class="back">😜 Salah!</div>
-      </div><div class="card" onclick="flipCard(this)">
-        <div class="front">?</div>
-        <div class="back">😜 Salah!</div>
-      </div><div class="card" onclick="flipCard(this)">
-        <div class="front">?</div>
-        <div class="back">😜 Salah!</div>
-      </div><div class="card" onclick="flipCard(this)">
-        <div class="front">?</div>
-        <div class="back">😜 Salah!</div>
-      </div><div class="card" onclick="flipCard(this)">
-        <div class="front">?</div>
-        <div class="back">😜 Salah!</div>
-      </div><div class="card" onclick="flipCard(this)">
-        <div class="front">?</div>
-        <div class="back">😜 Salah!</div>
-      </div><div class="card" onclick="flipCard(this)">
-        <div class="front">?</div>
-        <div class="back">😜 Salah!</div>
-      </div><div class="card" onclick="flipCard(this)">
-        <div class="front">?</div>
-        <div class="back">😜 Salah!</div>
-      </div><div class="card" onclick="flipCard(this)">
-        <div class="front">?</div>
-        <div class="back">😜 Salah!</div>
-      </div><div class="card" onclick="flipCard(this)">
-        <div class="front">?</div>
-        <div class="back">😜 Salah!</div>
-      </div><div class="card" onclick="flipCard(this)">
-        <div class="front">?</div>
-        <div class="back">😜 Salah!</div>
       </div>
-      <div class="card" onclick="flipCard(this)">
-        <div class="front">?</div>
-        <div class="back">😜 Salah!</div>
-      </div><div class="card" onclick="flipCard(this)">
-        <div class="front">?</div>
-        <div class="back">😜 Salah!</div>
-      </div><div class="card" onclick="flipCard(this)">
-        <div class="front">?</div>
-        <div class="back">😜 Salah!</div>
-      </div><div class="card" onclick="flipCard(this)">
-        <div class="front">?</div>
-        <div class="back">😜 Salah!</div>
-      </div><div class="card" onclick="flipCard(this)">
+    <div class="card" onclick="flipCard(this)">
         <div class="front">?</div>
         <div class="back">😜 Salah!</div>
       </div>
     <div class="card" onclick="flipCard(this)">
-      <div class="front">?</div>
-      <div class="back">😜 Salah!</div>
-    </div>
-    <!-- Tambahkan lebih banyak kartu di sini sesuai kebutuhan -->
-    
-    <!-- Foto dia di baris 4 kolom 7 -->
+        <div class="front">?</div>
+        <div class="back">😜 Salah!</div>
+      </div>
+    <div class="card" onclick="flipCard(this)">
+        <div class="front">?</div>
+        <div class="back">😜 Salah!</div>
+      </div>
+    <div class="card" onclick="flipCard(this)">
+        <div class="front">?</div>
+        <div class="back">😜 Salah!</div>
+      </div>
+    <div class="card" onclick="flipCard(this)">
+        <div class="front">?</div>
+        <div class="back">😜 Salah!</div>
+      </div>
+    <div class="card" onclick="flipCard(this)">
+        <div class="front">?</div>
+        <div class="back">😜 Salah!</div>
+      </div>
+    <div class="card" onclick="flipCard(this)">
+        <div class="front">?</div>
+        <div class="back">😜 Salah!</div>
+      </div>
+    <div class="card" onclick="flipCard(this)">
+        <div class="front">?</div>
+        <div class="back">😜 Salah!</div>
+      </div>
+    <div class="card" onclick="flipCard(this)">
+        <div class="front">?</div>
+        <div class="back">😜 Salah!</div>
+      </div>
+    <div class="card" onclick="flipCard(this)">
+        <div class="front">?</div>
+        <div class="back">😜 Salah!</div>
+      </div><div class="card" onclick="flipCard(this)">
+        <div class="front">?</div>
+        <div class="back">😜 Salah!</div>
+      </div><div class="card" onclick="flipCard(this)">
+        <div class="front">?</div>
+        <div class="back">😜 Salah!</div>
+      </div><div class="card" onclick="flipCard(this)">
+        <div class="front">?</div>
+        <div class="back">😜 Salah!</div>
+      </div><div class="card" onclick="flipCard(this)">
+        <div class="front">?</div>
+        <div class="back">😜 Salah!</div>
+      </div><div class="card" onclick="flipCard(this)">
+        <div class="front">?</div>
+        <div class="back">😜 Salah!</div>
+      </div><div class="card" onclick="flipCard(this)">
+        <div class="front">?</div>
+        <div class="back">😜 Salah!</div>
+      </div>
     <div class="card" onclick="flipCard(this)">
       <div class="front">?</div>
       <div class="back">
         <img src="https://github.com/myth120405/web/blob/main/s.jpeg" alt="Foto Dia">
-
       </div>
     </div>
     <div class="card" onclick="flipCard(this)">
         <div class="front">?</div>
         <div class="back">😜 Salah!</div>
       </div>
-      <div class="card" onclick="flipCard(this)">
+    <div class="card" onclick="flipCard(this)">
         <div class="front">?</div>
         <div class="back">😜 Salah!</div>
       </div>
@@ -263,6 +267,11 @@
         setTimeout(() => {
           card.querySelector('.celebrate').remove();
         }, 3000);
+        
+        // Periksa jika gambar dia ditemukan dan tampilkan pop-up
+        if (card.querySelector('.back img')) {
+          showPopup(); // Tampilkan pop-up
+        }
       }
     }
 
@@ -275,6 +284,11 @@
 
       const iframe = musicEmbed.contentWindow;
       iframe.postMessage('{"method":"play"}', '*');
+    }
+
+    // Fungsi untuk menampilkan pop-up
+    function showPopup() {
+      alert("Yey, monyetnya ketemu! 🎉");
     }
   </script>
 </body>
